@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram Checker</title>
+    <script>
+        function checkAnagram() {
+            var input1 = prompt("Enter First Word: ").toLowerCase().split('').sort();
+            var input2 = prompt("Enter Second Word: ").toLowerCase().split('').sort();
+			
+            if (input1.join('') === input2.join('')) {
+                alert('The two words are Anagram.');
+            } else {
+                alert('The two words are not Anagram.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Anagram Checker</h1>
+    <button onclick="checkAnagram()">Check</button>
+    <p id="result"></p>
+</body>
+</html>
